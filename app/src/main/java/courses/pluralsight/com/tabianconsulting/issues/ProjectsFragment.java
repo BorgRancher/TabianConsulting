@@ -243,7 +243,7 @@ public class ProjectsFragment extends Fragment implements
 
     private void deleteProjectAvatarFromStorage(Project project){
 
-        if(!project.getAvatar().equals("")){
+        if(!"".equals(project.getAvatar())){
             FirebaseStorage storage = FirebaseStorage.getInstance();
 
             StorageReference storageRef = storage.getReference();

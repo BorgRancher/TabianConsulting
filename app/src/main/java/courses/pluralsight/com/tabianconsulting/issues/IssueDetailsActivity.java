@@ -269,7 +269,7 @@ public class IssueDetailsActivity extends AppCompatActivity implements
     }
 
     private void setAssigneeSpinner(){
-        if(!mIssue.getAssignee().equals("")){
+        if(!"".equals(mIssue.getAssignee())){
             int position = ((SpinnerAdapter)mAssigneeSpinner.getAdapter())
                     .getPosition(((SpinnerAdapter)mAssigneeSpinner.getAdapter()).getSelectedText());
             mAssigneeSpinner.setSelection(position);

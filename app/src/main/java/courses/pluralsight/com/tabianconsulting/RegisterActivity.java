@@ -181,7 +181,7 @@ public class RegisterActivity extends AppCompatActivity {
         Log.d(TAG, "isValidDomain: verifying email has correct domain: " + email);
         String domain = email.substring(email.indexOf("@") + 1).toLowerCase();
         Log.d(TAG, "isValidDomain: users domain: " + domain);
-        return domain.equals(DOMAIN_NAME);
+        return DOMAIN_NAME.equals(domain);
     }
 
     /**
@@ -210,7 +210,7 @@ public class RegisterActivity extends AppCompatActivity {
      * @return
      */
     private boolean isEmpty(String string){
-        return string.equals("");
+        return "".equals(string);
     }
 
 

@@ -65,10 +65,10 @@ public class Issue implements Parcelable{
     }
 
     public static int getPriorityInteger(String priority){
-        if(priority.equals(LOW)){
+        if(LOW.equals(priority)){
             return 1;
         }
-        else if(priority.equals(MEDIUM)){
+        else if(MEDIUM.equals(priority)){
             return 2;
         }
         else{

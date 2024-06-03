@@ -60,7 +60,7 @@ public class NewDepartmentDialog extends DialogFragment {
      * @return
      */
     private boolean isEmpty(String string){
-        return string.equals("");
+        return "".equals(string);
     }
 }
 

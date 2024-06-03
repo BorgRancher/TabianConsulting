@@ -420,6 +420,6 @@ public class AdminActivity extends AppCompatActivity {
      * @return
      */
     private boolean isEmpty(String string){
-        return string.equals("");
+        return "".equals(string);
     }
 }

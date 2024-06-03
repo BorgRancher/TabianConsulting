@@ -132,7 +132,7 @@ public class ResendVerificationDialog extends DialogFragment {
      * @return
      */
     private boolean isEmpty(String string){
-        return string.equals("");
+        return "".equals(string);
     }
 
 

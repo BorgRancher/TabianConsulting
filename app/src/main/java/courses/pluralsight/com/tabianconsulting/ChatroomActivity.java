@@ -219,7 +219,7 @@ public class ChatroomActivity extends AppCompatActivity {
         for(int i = 0; i < mMessagesList.size(); i++) {
            // Log.d(TAG, "onDataChange: searching for userId: " + mMessagesList.get(i).getUser_id());
             final int j = i;
-            if(mMessagesList.get(i).getUser_id() != null && mMessagesList.get(i).getProfile_image().equals("")){
+            if(mMessagesList.get(i).getUser_id() != null && "".equals(mMessagesList.get(i).getProfile_image())){
                 Query query = reference.child(getString(R.string.dbnode_users))
                         .orderByKey()
                         .equalTo(mMessagesList.get(i).getUser_id());
